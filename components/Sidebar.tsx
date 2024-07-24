@@ -27,20 +27,27 @@ const Sidebar = () => {
         <CommandEmpty>No results found.</CommandEmpty>
 
         <CommandGroup heading="Suggestions">
-          <CommandItem>
-            <LayoutDashboard className="mr-2 h-4 w-4" />
-            <Link href="/">Dashboard</Link>
-          </CommandItem>
+          <Link href="/">
+            <CommandItem>
+              <LayoutDashboard className="mr-2 h-4 w-4" />
+              Dashboard
+            </CommandItem>
+          </Link>
 
-          <CommandItem>
-            <Newspaper className="mr-2 h-4 w-4" />
-            <Link href="/posts">Posts</Link>
-          </CommandItem>
+          <Link href="/posts">
+            <CommandItem>
+              <Newspaper className="mr-2 h-4 w-4" />
+              Posts
+            </CommandItem>
+          </Link>
 
-          <CommandItem>
-            <Folders className="mr-2 h-4 w-4" />
-            <Link href="#">Categories</Link>
-          </CommandItem>
+          <Link href="#">
+            <CommandItem>
+              <Folders className="mr-2 h-4 w-4" />
+              Categories
+            </CommandItem>
+          </Link>
+          
         </CommandGroup>
 
         <CommandSeparator />
