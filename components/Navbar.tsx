@@ -14,7 +14,7 @@ import {
 
 const Navbar = () => {
   return (
-    <div className="bg-primary dark: bg-blue-500 text-white py-2 px-5 flex justify-between">
+    <div className="bg-orange-300 dark:bg-red-400 text-white py-2 px-5 flex justify-between">
       <Link href="/">
         <Image src={logo} alt="uday's logo" width={40} />
       </Link>
